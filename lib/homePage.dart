@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:widget_gallery/widgets_screen/card.dart';
 import 'package:widget_gallery/widgets_screen/column.dart';
 import 'package:widget_gallery/widgets_screen/elevationButton.dart';
 import 'package:widget_gallery/widgets_screen/iconButton.dart';
@@ -217,6 +218,24 @@ class HomePage extends StatelessWidget {
                       textStyle:
                           const TextStyle(fontSize: 20, fontWeight: FontWeight.bold)),
                   child: const Text("STACK"),
+                ),
+              ),
+              const SizedBox(height: 10),
+              SizedBox(
+                width: 400,
+                height: 50,
+                child: ElevatedButton(
+                  onPressed: () {
+                    Navigator.push(context, MaterialPageRoute(builder: (context) => CardPage()));
+                  },
+                  style: ElevatedButton.styleFrom(
+                      primary: Colors.black54,
+                      shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(15),
+                      ),
+                      textStyle:
+                      const TextStyle(fontSize: 20, fontWeight: FontWeight.bold)),
+                  child: const Text("CARD"),
                 ),
               ),
             ]),
