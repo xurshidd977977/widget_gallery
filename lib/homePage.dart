@@ -3,6 +3,7 @@ import 'package:widget_gallery/widgets_screen/card.dart';
 import 'package:widget_gallery/widgets_screen/column.dart';
 import 'package:widget_gallery/widgets_screen/elevationButton.dart';
 import 'package:widget_gallery/widgets_screen/expanded.dart';
+import 'package:widget_gallery/widgets_screen/form.dart';
 import 'package:widget_gallery/widgets_screen/iconButton.dart';
 import 'package:widget_gallery/widgets_screen/image.dart';
 import 'package:widget_gallery/widgets_screen/outlinedButton.dart';
@@ -10,6 +11,7 @@ import 'package:widget_gallery/widgets_screen/stack.dart';
 import 'package:widget_gallery/widgets_screen/text.dart';
 import 'package:widget_gallery/widgets_screen/row.dart';
 import 'package:widget_gallery/widgets_screen/textButton.dart';
+import 'package:widget_gallery/widgets_screen/textField.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({Key? key}) : super(key: key);
@@ -260,6 +262,48 @@ class HomePage extends StatelessWidget {
                       textStyle: const TextStyle(
                           fontSize: 20, fontWeight: FontWeight.bold)),
                   child: const Text("EXPANDED"),
+                ),
+              ),
+              const SizedBox(height: 10),
+              SizedBox(
+                width: 400,
+                height: 50,
+                child: ElevatedButton(
+                  onPressed: () {
+                    Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                            builder: (context) => TextFieldPage()));
+                  },
+                  style: ElevatedButton.styleFrom(
+                      primary: Colors.pink,
+                      shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(15),
+                      ),
+                      textStyle: const TextStyle(
+                          fontSize: 20, fontWeight: FontWeight.bold)),
+                  child: const Text("TEXT FIELD"),
+                ),
+              ),
+              const SizedBox(height: 10),
+              SizedBox(
+                width: 400,
+                height: 50,
+                child: ElevatedButton(
+                  onPressed: () {
+                    Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                            builder: (context) => FormPage()));
+                  },
+                  style: ElevatedButton.styleFrom(
+                      primary: Colors.lime,
+                      shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(15),
+                      ),
+                      textStyle: const TextStyle(
+                          fontSize: 20, fontWeight: FontWeight.bold)),
+                  child: const Text("FORM "),
                 ),
               ),
             ]),
