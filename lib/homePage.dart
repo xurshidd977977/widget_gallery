@@ -12,6 +12,7 @@ import 'package:widget_gallery/widgets_screen/text.dart';
 import 'package:widget_gallery/widgets_screen/row.dart';
 import 'package:widget_gallery/widgets_screen/textButton.dart';
 import 'package:widget_gallery/widgets_screen/textField.dart';
+import 'package:widget_gallery/widgets_screen/toast.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({Key? key}) : super(key: key);
@@ -304,6 +305,27 @@ class HomePage extends StatelessWidget {
                       textStyle: const TextStyle(
                           fontSize: 20, fontWeight: FontWeight.bold)),
                   child: const Text("FORM "),
+                ),
+              ),
+              const SizedBox(height: 10),
+              SizedBox(
+                width: 400,
+                height: 50,
+                child: ElevatedButton(
+                  onPressed: () {
+                    Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                            builder: (context) => ToastPage()));
+                  },
+                  style: ElevatedButton.styleFrom(
+                      primary: Colors.orangeAccent,
+                      shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(15),
+                      ),
+                      textStyle: const TextStyle(
+                          fontSize: 20, fontWeight: FontWeight.bold)),
+                  child: const Text("TOAST "),
                 ),
               ),
             ]),
