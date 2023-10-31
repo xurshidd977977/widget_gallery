@@ -8,6 +8,7 @@ import 'package:widget_gallery/widgets_screen/form.dart';
 import 'package:widget_gallery/widgets_screen/iconButton.dart';
 import 'package:widget_gallery/widgets_screen/image.dart';
 import 'package:widget_gallery/widgets_screen/outlinedButton.dart';
+import 'package:widget_gallery/widgets_screen/progressBar.dart';
 import 'package:widget_gallery/widgets_screen/stack.dart';
 import 'package:widget_gallery/widgets_screen/text.dart';
 import 'package:widget_gallery/widgets_screen/row.dart';
@@ -348,6 +349,27 @@ class HomePage extends StatelessWidget {
                       textStyle: const TextStyle(
                           fontSize: 20, fontWeight: FontWeight.bold)),
                   child: const Text("ALERT DIALOG "),
+                ),
+              ),
+              const SizedBox(height: 10),
+              SizedBox(
+                width: 400,
+                height: 50,
+                child: ElevatedButton(
+                  onPressed: () {
+                    Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                            builder: (context) => ProgressBarPage()));
+                  },
+                  style: ElevatedButton.styleFrom(
+                      primary: Colors.indigoAccent,
+                      shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(15),
+                      ),
+                      textStyle: const TextStyle(
+                          fontSize: 20, fontWeight: FontWeight.bold)),
+                  child: const Text("PROGRESS BAR"),
                 ),
               ),
             ]),
