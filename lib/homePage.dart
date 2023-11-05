@@ -11,6 +11,7 @@ import 'package:widget_gallery/widgets_screen/outlinedButton.dart';
 import 'package:widget_gallery/widgets_screen/progressBar.dart';
 import 'package:widget_gallery/widgets_screen/snackBar.dart';
 import 'package:widget_gallery/widgets_screen/stack.dart';
+import 'package:widget_gallery/widgets_screen/tabBar.dart';
 import 'package:widget_gallery/widgets_screen/text.dart';
 import 'package:widget_gallery/widgets_screen/row.dart';
 import 'package:widget_gallery/widgets_screen/textButton.dart';
@@ -403,16 +404,16 @@ class HomePage extends StatelessWidget {
                     Navigator.push(
                         context,
                         MaterialPageRoute(
-                            builder: (context) => SnackBarPage()));
+                            builder: (context) => TabBarPage()));
                   },
                   style: ElevatedButton.styleFrom(
-                      primary: Colors.purple,
+                      primary: Colors.green,
                       shape: RoundedRectangleBorder(
                         borderRadius: BorderRadius.circular(15),
                       ),
                       textStyle: const TextStyle(
                           fontSize: 20, fontWeight: FontWeight.bold)),
-                  child: const Text("SNACKBAR"),
+                  child: const Text("TABBAR"),
                 ),
               ),
             ]),
