@@ -8,6 +8,7 @@ import 'package:widget_gallery/widgets_screen/expanded.dart';
 import 'package:widget_gallery/widgets_screen/form.dart';
 import 'package:widget_gallery/widgets_screen/iconButton.dart';
 import 'package:widget_gallery/widgets_screen/image.dart';
+import 'package:widget_gallery/widgets_screen/listView.dart';
 import 'package:widget_gallery/widgets_screen/outlinedButton.dart';
 import 'package:widget_gallery/widgets_screen/progressBar.dart';
 import 'package:widget_gallery/widgets_screen/snackBar.dart';
@@ -436,6 +437,27 @@ class HomePage extends StatelessWidget {
                       textStyle: const TextStyle(
                           fontSize: 20, fontWeight: FontWeight.bold)),
                   child: const Text("DRAWER"),
+                ),
+              ),
+              const SizedBox(height: 10),
+              SizedBox(
+                width: 400,
+                height: 50,
+                child: ElevatedButton(
+                  onPressed: () {
+                    Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                            builder: (context) => ListViewPage()));
+                  },
+                  style: ElevatedButton.styleFrom(
+                      primary: Colors.orange,
+                      shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(15),
+                      ),
+                      textStyle: const TextStyle(
+                          fontSize: 20, fontWeight: FontWeight.bold)),
+                  child: const Text("LISTVIEW"),
                 ),
               ),
             ]),
