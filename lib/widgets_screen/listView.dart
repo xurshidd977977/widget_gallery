@@ -23,7 +23,7 @@ class ListViewPage extends StatelessWidget {
             ),
           ),
           const ListTile(
-            leading: Icon(Icons.messenger_outline),
+            leading: Icon(Icons.messenger_outline, size: 30),
             title: Text(
               "Chat Settings",
               style: TextStyle(fontSize: 20),
@@ -31,7 +31,7 @@ class ListViewPage extends StatelessWidget {
           ),
           const Divider(thickness: .1, color: Colors.black, indent: 70),
           const ListTile(
-            leading: Icon(Icons.lock_outline),
+            leading: Icon(Icons.lock_outline, size: 30),
             title: Text(
               "Privacy and Security",
               style: TextStyle(fontSize: 20),
@@ -39,7 +39,7 @@ class ListViewPage extends StatelessWidget {
           ),
           const Divider(thickness: .1, color: Colors.black, indent: 70),
           const ListTile(
-            leading: Icon(Icons.notifications_none_outlined),
+            leading: Icon(Icons.notifications_none_outlined, size: 30),
             title: Text(
               "Notifications and Sounds",
               style: TextStyle(fontSize: 20),
@@ -47,7 +47,7 @@ class ListViewPage extends StatelessWidget {
           ),
           const Divider(thickness: .1, color: Colors.black, indent: 70),
           const ListTile(
-            leading: Icon(Icons.storage_outlined),
+            leading: Icon(Icons.storage_outlined, size: 30),
             title: Text(
               "Data and Storage",
               style: TextStyle(fontSize: 20),
@@ -55,7 +55,7 @@ class ListViewPage extends StatelessWidget {
           ),
           const Divider(thickness: .1, color: Colors.black, indent: 70),
           const ListTile(
-            leading: Icon(Icons.battery_charging_full_outlined),
+            leading: Icon(Icons.battery_charging_full_outlined, size: 30),
             title: Text(
               "Power Saving",
               style: TextStyle(fontSize: 20),
@@ -63,7 +63,7 @@ class ListViewPage extends StatelessWidget {
           ),
           const Divider(thickness: .1, color: Colors.black, indent: 70),
           const ListTile(
-            leading: Icon(Icons.folder_open_outlined),
+            leading: Icon(Icons.folder_open_outlined, size: 30),
             title: Text(
               "Chat Folders",
               style: TextStyle(fontSize: 20),
@@ -71,7 +71,7 @@ class ListViewPage extends StatelessWidget {
           ),
           const Divider(thickness: .1, color: Colors.black, indent: 70),
           const ListTile(
-            leading: Icon(Icons.devices_outlined),
+            leading: Icon(Icons.devices_outlined, size: 30),
             title: Text(
               "Devices",
               style: TextStyle(fontSize: 20),
@@ -79,7 +79,7 @@ class ListViewPage extends StatelessWidget {
           ),
           const Divider(thickness: .1, color: Colors.black, indent: 70),
           const ListTile(
-            leading: Icon(Icons.language),
+            leading: Icon(Icons.language, size: 30),
             title: Text(
               "Language",
               style: TextStyle(fontSize: 20),
@@ -91,7 +91,7 @@ class ListViewPage extends StatelessWidget {
           ),
           const ListTile(
             leading: Icon(
-              Icons.star,
+              Icons.star, size: 40,
               color: Colors.deepPurple,
             ),
             title: Text(
@@ -114,7 +114,7 @@ class ListViewPage extends StatelessWidget {
             ),
           ),
           const ListTile(
-            leading: Icon(Icons.sms_outlined),
+            leading: Icon(Icons.sms_outlined, size: 30),
             title: Text(
               "Ask a Question",
               style: TextStyle(fontSize: 20),
@@ -122,7 +122,7 @@ class ListViewPage extends StatelessWidget {
           ),
           const Divider(thickness: .1, color: Colors.black, indent: 70),
           const ListTile(
-            leading: Icon(Icons.help_outline),
+            leading: Icon(Icons.help_outline, size: 30),
             title: Text(
               "Telegram FAQ",
               style: TextStyle(fontSize: 20),
@@ -130,7 +130,7 @@ class ListViewPage extends StatelessWidget {
           ),
           const Divider(thickness: .1, color: Colors.black, indent: 70),
           const ListTile(
-            leading: Icon(Icons.verified_user_outlined),
+            leading: Icon(Icons.verified_user_outlined, size: 30),
             title: Text(
               "Privacy Policy",
               style: TextStyle(fontSize: 20),
