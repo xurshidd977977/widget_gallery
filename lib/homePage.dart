@@ -6,6 +6,7 @@ import 'package:widget_gallery/widgets_screen/column.dart';
 import 'package:widget_gallery/widgets_screen/elevationButton.dart';
 import 'package:widget_gallery/widgets_screen/expanded.dart';
 import 'package:widget_gallery/widgets_screen/form.dart';
+import 'package:widget_gallery/widgets_screen/gridView.dart';
 import 'package:widget_gallery/widgets_screen/iconButton.dart';
 import 'package:widget_gallery/widgets_screen/image.dart';
 import 'package:widget_gallery/widgets_screen/listView.dart';
@@ -458,6 +459,27 @@ class HomePage extends StatelessWidget {
                       textStyle: const TextStyle(
                           fontSize: 20, fontWeight: FontWeight.bold)),
                   child: const Text("LISTVIEW"),
+                ),
+              ),
+              const SizedBox(height: 10),
+              SizedBox(
+                width: 400,
+                height: 50,
+                child: ElevatedButton(
+                  onPressed: () {
+                    Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                            builder: (context) => GridViewPage()));
+                  },
+                  style: ElevatedButton.styleFrom(
+                      primary: Colors.teal,
+                      shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(15),
+                      ),
+                      textStyle: const TextStyle(
+                          fontSize: 20, fontWeight: FontWeight.bold)),
+                  child: const Text("GRIDVIEW"),
                 ),
               ),
             ]),
