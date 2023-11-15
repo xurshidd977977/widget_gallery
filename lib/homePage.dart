@@ -13,6 +13,7 @@ import 'package:widget_gallery/widgets_screen/image.dart';
 import 'package:widget_gallery/widgets_screen/listView.dart';
 import 'package:widget_gallery/widgets_screen/outlinedButton.dart';
 import 'package:widget_gallery/widgets_screen/progressBar.dart';
+import 'package:widget_gallery/widgets_screen/radioButton.dart';
 import 'package:widget_gallery/widgets_screen/snackBar.dart';
 import 'package:widget_gallery/widgets_screen/stack.dart';
 import 'package:widget_gallery/widgets_screen/tabBar.dart';
@@ -502,6 +503,27 @@ class HomePage extends StatelessWidget {
                       textStyle: const TextStyle(
                           fontSize: 20, fontWeight: FontWeight.bold)),
                   child: const Text("CHECKBOX"),
+                ),
+              ),
+              const SizedBox(height: 10),
+              SizedBox(
+                width: 400,
+                height: 50,
+                child: ElevatedButton(
+                  onPressed: () {
+                    Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                            builder: (context) => RadioButtonPage()));
+                  },
+                  style: ElevatedButton.styleFrom(
+                      primary: Colors.deepPurpleAccent,
+                      shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(15),
+                      ),
+                      textStyle: const TextStyle(
+                          fontSize: 20, fontWeight: FontWeight.bold)),
+                  child: const Text("RADIOBUTTON"),
                 ),
               ),
             ]),
